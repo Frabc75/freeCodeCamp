@@ -1,0 +1,95 @@
+html {
+  /* To use Rem with 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+
+main {
+  background: #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 10px;
+}
+
+#title {
+  font-size: 4rem;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 1.4;
+  margin: 20px 0;
+}
+
+#tribute-title {
+  font-size: 3rem;
+  margin: 50px 0;
+}
+
+ul {
+  max-width: 550px;
+  margin: 25px auto;
+  text-align: left;
+}
+
+li {
+  margin: 20px 0px;
+  text-align: justify;
+}
+
+time {
+  font-weight: bold;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 500px;
+  margin: 25px auto;
+  text-align: justify;
+}
+
+#endtitle {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+@media (max-width: 375px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #tribute-title {
+    font-size: 2rem;
+  }
+
+  #endtitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Getting_Started" class="nav-link">Getting Started</a></li>
+        <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li><a href="#Variable_Names" class="nav-link">Variable Names</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+    </nav>
+    <main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>
+        Introduction
+        </header>
+        <article>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <p>It is used for:</p>
+        <ul>
+            <li>web development (server-side),</li>
+            <li>software development,</li>
+            <li>mathematics,</li>
+            <li>system scripting.</li>
+        </ul>
+        <h4>What can Python do?</h4>
+        <ul>
+            <li>Python can be used on a server to create web applications.</li>
+            <li>Python can be used alongside software to create workflows.</li>
+            <li>Python can connect to database systems. It can also read and modify files.</li>
+            <li>Python can be used to handle big data and perform complex mathematics.</li>
+            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+        </ul>
+        <h4>Why Python?</h4>
+        <ul>
+            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+            <li>Python has a simple syntax similar to the English language.</li>
+            <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+            <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+            <li>Python can be treated in a procedural way, an object-orientated way or a functional way.</li>
+        </ul>
+        <h4>Good to know</h4>
+        <ul>
+            <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+            <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+        </ul>
+        <h4>Python Syntax compared to other programming languages</h4>
+        <ul>
+            <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+        </ul>
+        </article>
+    </section>
+    <section class="main-section" id="Getting_Started">
+        <header>
+        Getting Started
+        </header>
+        <article>
+        <h4>Python Install</h4>
+        <p>Many PCs and Macs will have python already installed.</p>
+        <p><To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):></p>
+            <code  class="tml">C:\Users\Your Name>python --version</code>
+        <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+        <code  class="tml">python --version</code>
+        <p>
+            If you find that you do not have python installed on your computer, then you can download it for free from the following website: 
+            <a class="link" href="https://www.python.org/" target="_blank">https://www.python.org/</a>
+        </p>
+        </article>
+    </section>
+    <section class="main-section" id="Hello_World">
+        <header>
+        Hello World
+        </header>
+        <article>
+        <p>
+            Python is an interpreted programming language, this means that as a developer you write Python (.py) 
+            files in a text editor and then put those files into the python interpreter to be executed.
+        </p>
+        <p>
+            The way to run a python file is like this on the command line:
+        </p>
+        <code class="tml">C:\Users\Your Name>python helloworld.py </code>
+        <p>Where "helloworld.py" is the name of your python file.</p>
+        <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+        <code>print("Hello, World!")</code>
+        <p>Congratulations, you have written and executed your first Python program.</p>
+        </article>
+    </section>
+    <section class="main-section" id="Variables">
+        <header>
+        Variables
+        </header>
+        <article>
+        <p>Variables are containers for storing data values.</p>
+        <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <code>
+            x = 5 <br>
+            y = "John" <br>
+            print(x) <br>
+            print(y)
+        </code>
+        </article>
+    </section>
+    <section class="main-section" id="Variable_Names">
+        <header>
+        Variable Names
+        </header>
+        <article>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+        <ul>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+            <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        </ul>
+        <code>
+            #Legal variable names: <br>
+            myvar = "John" <br>
+            my_var = "John" <br>
+            _my_var = "John" <br>
+            myVar = "John" <br>
+            MYVAR = "John" <br>
+            myvar2 = "John" <br><br>
+
+            #Illegal variable names: <br>
+            2myvar = "John" <br>
+            my-var = "John" <br>
+            my var = "John" 
+        </code>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+        <p>
+            All the documentation in this page is taken from <a class="link" href="https://www.w3schools.com/python/default.asp" target="_blank">w3schools</a>
+        </p>
+        </article>
+    </section>
+    </main>
+</body>
+</html>

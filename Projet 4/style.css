@@ -1,0 +1,136 @@
+/*******************************/
+/*          Global             */
+/*******************************/
+body {
+  color: #000000;
+  background-color: #ffd35f;
+  font-family: "Gill Sans", sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  color: #2e78a7;
+  text-align: left;
+  font-size: xx-large;
+  font-weight: 600;
+}
+/*******************************/
+/*          Navbar             */
+/*******************************/
+
+#navbar {
+  background-color: #2e78a7;
+  color: #ffffff;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100%;
+  border-right: solid;
+  border-color: #2e78a7;
+}
+
+#navbar header {
+  color: #ffd35f;
+  text-align: center;
+  font-size: x-large;
+  margin: 5px;
+  padding: 5px;
+}
+
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #ffffff;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/*******************************/
+/*          main-doc           */
+/*******************************/
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 0px 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  margin: 17px;
+  font-size: 110%;
+  font-weight: 300;
+}
+
+article h4 {
+  color: #2e78a7;
+  font-weight: 400;
+}
+
+code {
+  display: block;
+  text-align: left;
+  position: relative;
+  line-height: 2;
+  background-color: #f7f7f7;
+  color: #2e78a7;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+code.tml {
+  color: #f7f7f7;
+  background-color: #000000;
+}
+
+a.link {
+  color: #2e78a7;
+}
+
+/*******************************/
+/*          mobile             */
+/*******************************/
+
+@media only screen and (max-width: 750px) {
+  #navbar ul {
+    height: 200px;
+  }
+
+  #navbar {
+    background-color: #2e78a7;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 272px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 270px;
+    margin: 270px 5px 10px 5px;
+  }
+}

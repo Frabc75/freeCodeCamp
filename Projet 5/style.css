@@ -1,0 +1,271 @@
+/* Import Bootstrap 4 */
+
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+
+/* Root variables */
+
+/* https://colorhunt.co/palette/225760 */
+
+:root {
+  --white-color: white;
+  --grey-color: #dddddd;
+  --bunker-color: #222831;
+  --bluewood-color: #30475e;
+  --red-color: #f05454;
+}
+
+/* Reset all */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  color: var(--white-color);
+  background: var(--bluewood-color);
+}
+
+/* Base tags */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--red-color);
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+/* navbar */
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  font-weight: bold;
+  background: var(--bunker-color);
+  border-bottom: 4px solid var(--red-color);
+  z-index: 7;
+}
+
+#nav-ul {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-a {
+  display: block;
+  padding: 2rem;
+}
+
+/* welcome */
+
+#welcome-h1 {
+  padding-bottom: 2rem;
+}
+
+#welcome-h3 {
+  color: var(--red-color);
+}
+
+/* projects */
+
+#projects {
+  background: var(--red-color);
+  width: 100%;
+  height: auto;
+  padding: 13rem 2rem;
+}
+
+#projects-title {
+  margin: 0rem auto 10rem;
+  border-bottom: 0.5rem solid var(--white-color);
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem 3rem;
+  width: 40rem;
+  height: auto;
+  border: none;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background: var(--bluewood-color);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn-primary {
+  font-size: 1.6rem;
+  font-weight: normal;
+  background: var(--red-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  color: var(--red-color);
+  background: var(--white-color);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+#project-button-show {
+  font-size: 3rem;
+  border: 2px solid var(--red-color);
+  padding: 2rem 4rem;
+  margin-top: 10rem;
+  background: var(--bluewood-color);
+}
+
+#project-button-show:hover {
+  border: 2px solid var(--bluewood-color);
+  color: var(--red-color);
+  background: var(--white-color);
+}
+
+/* Contact */
+
+#contact {
+  height: 85vh;
+}
+#contact-p {
+  font-weight: normal;
+  font-style: italic;
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 2rem 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--bunker-color);
+  border-top: 4px solid var(--red-color);
+}
+
+.footer-p {
+  margin: 2rem;
+}
+
+/* 
+  Media queries for mobile
+  415px max width : IPhone Plus
+*/
+
+@media (max-width: 41.5em) {
+  html {
+    font-size: 55%;
+  }
+
+  #navbar {
+    justify-content: center;
+  }
+
+  #contact {
+    height: 80vh;
+  }
+
+  #contact-title {
+    margin-top: 4rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-p {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}

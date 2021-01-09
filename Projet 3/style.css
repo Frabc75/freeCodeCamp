@@ -1,0 +1,318 @@
+/*******************************/
+/*          Global             */
+/*******************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section {
+  padding-top: 70px;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*******************************/
+/*          Header             */
+/*******************************/
+
+/* Style the header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(39, 32, 77);
+  font-size: 25px;
+  line-height: 25px;
+  box-sizing: content-box;
+  box-shadow: 10px 5px 5px grey;
+  color: white;
+}
+
+/* Float the image section to the left */
+.header-left {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo */
+#header-img {
+  width: 70px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 30px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Style the header links */
+#header a {
+  float: left;
+  text-align: center;
+  margin: 15px 45px 0px 45px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+}
+
+/* Change the background color on mouse-over */
+#header a:hover {
+  background-color: #ddd;
+  color: rgb(39, 32, 77);
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media (max-width: 950px) {
+  #header a {
+    float: none;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*******************************/
+/*          The Footy          */
+/*******************************/
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  margin: 30px 0px;
+}
+
+#the-footy {
+  margin-top: 50px;
+}
+
+@media (max-width: 950px) {
+  #the-footy {
+    padding-top: 250px;
+  }
+}
+
+#the-footy .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: rgb(39, 32, 77);
+}
+
+@media (max-width: 950px) {
+  #the-footy .icon {
+    display: none;
+  }
+}
+
+#the-footy .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+@media (max-width: 950px) {
+  #the-footy .desc {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    height: 150px;
+  }
+}
+
+#the-footy h2 {
+  margin-bottom: 5px;
+}
+
+#the-footy p {
+  text-align: justify;
+  margin: auto 50px auto 0px;
+}
+@media (max-width: 950px) {
+  #the-footy p {
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  #the-footy {
+    margin-top: 0;
+  }
+}
+
+/*******************************/
+/*          How to Play        */
+/*******************************/
+
+#how-to-play {
+  display: flex;
+  justify-content: center;
+}
+
+#how-to-play > iframe {
+  max-width: 700px;
+  width: 100%;
+}
+
+/*******************************/
+/*          The Footy          */
+/*******************************/
+
+#club {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.idf-club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+@media (max-width: 950px) {
+  #club {
+    flex-direction: column;
+  }
+  .idf-club {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.idf-club > .name-club {
+  background-color: rgb(39, 32, 77);
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.idf-club > p {
+  text-align: justify;
+  margin: 30px;
+}
+
+.idf-club > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: rgb(39, 32, 77);
+  font-weight: 400;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(39, 32, 77);
+  border: 3px rgb(39, 32, 77) solid;
+}
+
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#newsletter #inputs-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#newsletter h2 {
+  margin: 15px 0;
+  color: rgb(39, 32, 77);
+}
+
+#newsletter input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(39, 32, 77);
+  border-radius: 1px;
+}
+
+#newsletter input[type="submit"] {
+  border: 0;
+  margin: 15px 0;
+  background-color: rgb(39, 32, 77);
+  font-weight: 400;
+  color: white;
+}
+
+#newsletter input[type="submit"]:hover {
+  background-color: white;
+  color: rgb(39, 32, 77);
+  border: 3px rgb(39, 32, 77) solid;
+}
+
+/*******************************/
+/*          Footer             */
+/*******************************/
+
+footer {
+  /* margin-top: 30px; */
+  background-color: rgb(39, 32, 77);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
